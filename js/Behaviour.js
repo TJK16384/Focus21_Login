@@ -85,7 +85,7 @@ $(document).ready(function() { // when raw DOM done building
 // Dyanmic generation of Apps HTML tags from a list (JSON later):
 function PopulateApps($This) {
   const nApps = 15;
-  const arsAppName = ["Interop","PHC_Hub","ImmuCast","SENTINEL","SMaRT" , "Interop","PHC_Hub","ImmuCast","SENTINEL","SMaRT" , "Interop","PHC_Hub","ImmuCast","SENTINEL","SMaRT"]; 
+  const arsAppName = ["Interop","PHC_Hub","Immucast","SENTINEL","SMaRT" , "Interop","PHC_Hub","Immucast","SENTINEL","SMaRT" , "Interop","PHC_Hub","Immucast","SENTINEL","SMaRT"]; 
   
   for(var x=0; x<nApps; x++){
     var $Item = 
