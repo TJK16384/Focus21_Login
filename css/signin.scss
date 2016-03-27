@@ -1,0 +1,102 @@
+/* Adapted from Bootstrap Signin example */
+
+#Login__Profile {
+  display:  none;
+}
+
+.form-signin {
+  margin:     0.5em auto;
+  max-width:  300px;
+  padding:    0;
+  position:   relative;
+  
+  .Login__Textbox {
+    position: relative;
+  }
+  
+  #ForgotPW {
+    //display:        block;
+    
+    /*  Ditched because I remembered Bootstrap has columns.  Duh.
+    position:   absolute;
+      right:  0;  // inline w/checkbox
+    //z-index:    8;
+    */
+    
+    #ForgotPW__link {
+      //display:  inline-block;
+      text-align: center;
+    }
+  }
+  
+  .form-signin-heading {
+    //margin-bottom:  10px;
+  }
+  .checkbox {
+    font-weight:  normal;
+    margin: {
+      bottom: 10px;
+      top:    0;
+    }
+    //position: relative;
+  }
+  
+  // Each textbox in the form
+  $TextBoxHeight: 55px;
+  .form-control {
+    border: 1px solid $DarkishBlue {
+      radius: 80px;
+    }
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    //font-size:  16px;
+    height:       $TextBoxHeight;
+    margin-top:   20px;
+    padding:      10px 40px;
+    position:     relative;
+  }
+  .form-control:focus {
+    z-index:  2;
+  }
+  
+  input[type="email"] {
+    //
+  }
+  input[type="password"] {
+    //
+  }
+  
+  $IconSize: 20px;
+  $IconFontSize: 8px;
+  .glyphicon {
+    border: 1px solid $DarkishBlue {
+      radius: $IconSize;
+    }
+    color:          white;
+    font-size:      $IconFontSize;
+    height:         $IconSize;
+    padding:        4px 5.5px;  // has to be manually fudged
+    position:       absolute;
+      left:       15px;
+      top:        ($TextBoxHeight - $IconSize) / 2;
+    text-align:     center;
+    text-shadow:    // emulate text-outline using 4 solid shadows
+      -1px -1px 0 $DarkishBlue,
+      -1px 1px 0 $DarkishBlue,
+      1px -1px 0 $DarkishBlue,
+      1px 1px 0 $DarkishBlue;
+    width:          $IconSize;
+    z-index:        100;  // force on top of focused text box
+  }
+  
+  #Login__Submit {
+    @extend .form-control;
+    background: none $DarkishBlue;  // override linear gradient
+    font: {
+      size:   17px;
+      weight: bold;
+    }
+    //margin: 0;
+  }
+}

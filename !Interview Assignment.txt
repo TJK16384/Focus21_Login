@@ -1,0 +1,14 @@
+1) Register at https://zeplin.io/ and send me your user name / email
+2) Use BEM techniques  https://css-tricks.com/bem-101/
+3) Use SASS precompiler for template customization
+4) Deliver it online.
+5) Use React.JS as SPA.
+6) Use proper fonts.
+7) Make sure it is responsive. (bootstrap)
+8) Use animation to indicate wrong password. (Shake, just like on iCloud)
+9) Look into proper image handling. (bonus) https://www.resrc.it/docs
+10) Create selenium tests (bonus) Nightwatch.
+
+I will send you zeppelin invite
+
+Due date - Sunday 27th

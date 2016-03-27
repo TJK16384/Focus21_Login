@@ -1,0 +1,178 @@
+/* SCSS Document - SASS with CSS-style brackets and semicolons */
+
+/* Variables */
+$Fonts: Helvetica Neue, Univers, Arial, sans-serif;
+
+$FooterHeight: 2.5em;
+$FooterOverhang: 5%;
+
+/* Colours */
+$DarkishBlue: #00479f;
+$LightGrey:   #eee;
+
+/* Mixins and "Functions" */
+@mixin border-radius($radius) {
+  -webkit-border-radius:  $radius;
+     -moz-border-radius:  $radius;
+      -ms-border-radius:  $radius;
+          border-radius:  $radius;
+}
+@mixin box-shadow($h, $v, $r, $spread, $color) {
+  -webkit-box-shadow: $h $v $r $spread $color;
+     -moz-box-shadow: $h $v $r $spread $color;
+      -ms-box-shadow: $h $v $r $spread $color;
+          box-shadow: $h $v $r $spread $color;
+}
+
+//@import 'fontdef-Aperture';
+@import 'signin';
+
+html {
+  // tiled background here?
+  min-height: 100%;     // two important parts needed for sticky bars
+  position:   relative;
+}
+
+body {
+  background:     white;
+  color:          black;
+  font-family:    $Fonts;
+  margin-bottom:  $FooterHeight+1em;
+  //position:       relative;
+  
+  nav {
+    $Padding: 20px;
+    
+    &#Login__Nav {  // sticky navbar
+      background: #f5f5f5;
+      display: none;  // hidden at first
+      height: 40 + 2*$Padding;
+      margin-bottom: 0;
+      padding: $Padding;
+      //position: absolute;
+        //top: 0;
+        //right: 0;
+      z-index: 1000;
+      
+      .glyphicon {
+        ///display:    table-cell;
+        font-size:  22px;
+      }
+      
+      .Login__Nav__List {
+        float:  right;
+        margin: 0;
+        
+        .dropdown-menu {
+          left:   auto;
+          right:  0;
+        }
+        
+        > li {
+          display:    inline-block;
+          list-style: none;
+          padding-left: 12px;
+          position: relative;
+            top: 20px;
+          transform: translateY(-50%);
+          
+          > a {
+            color: black;
+            //display: table-cell;
+            text-decoration: none;
+            //vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  
+  header {
+    border-bottom:  1px solid $LightGrey;
+    margin-bottom:  1em;
+    padding:  8px;
+    position: relative;
+    z-index:  -1;  // fixes logo being in front of nav dropdown
+    
+    #header__logo {
+      margin:     auto;
+      max-width:  300px;
+      //opacity:    0.8;
+      width:      100%;    // full width of containing div
+    }
+  }
+  
+  footer {  // sticky footer; clings to bottom of screen until viewport too small
+    //background: white;
+    border-top: 1px solid $LightGrey;
+    height:     $FooterHeight;
+    position:   absolute;
+      bottom: 0;
+    width:      100%;
+    
+    p {
+      font-size:  13px;
+      margin:     0.5em;
+    }
+  }
+  
+  #Apps {
+    display:  none;
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+    
+    $AppSize: 130px;
+    .App {
+      background: {
+        //attachment: fixed;
+        color:      white;
+        position:   center;
+        repeat:     no-repeat;
+        size:       88px;
+      }
+      border:     1px solid $LightGrey;
+      cursor:     pointer;
+      display:    inline-block;
+      height:     $AppSize;
+      margin:     6px;
+      opacity:    0.75;
+      //overflow:   hidden;
+      transition: all 250ms;
+      width:      $AppSize;
+      
+      &:hover {
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+        opacity:    1;
+        transform:  scale(1.1);
+      }
+    }
+  }
+
+  
+  h1 {
+    font: {
+      size:    42px;
+      style:   italic;
+      variant: small-caps;
+      weight:  bold;
+    }
+    margin:       8px 0 0;    // top, left+right, bottom
+  }
+  h2 {
+    //
+  }
+  h3 {
+    font: {
+      weight: bolder;
+    }
+  }
+  
+  hr {
+    //margin: 1em 0;
+  }
+  
+  a:hover { // force all no-link a tags to pretend they link somewhere
+    cursor: pointer;
+  }
+}

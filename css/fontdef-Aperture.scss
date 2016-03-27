@@ -1,0 +1,25 @@
+/* SCSS Definition of font "Aperture" */
+
+@font-face {    // (NORMAL)
+  font-family:  'Aperture';
+  src:          url('../fonts/Univers.otf');
+}
+
+@font-face {    // BOLD
+  font-family:  'Aperture';
+  font-weight:  bold;
+  src:          url('../fonts/Univers-Bold.otf');
+}
+
+@font-face {    // BOLD + ITALIC
+  font-family:  'Aperture';
+  font-style:   italic;
+  font-weight:  bold;
+  src:          url('../fonts/Univers-BoldOblique.otf');
+}
+
+@font-face {    // ITALIC
+  font-family:  'Aperture';
+  font-style:   italic;
+  src:          url('../fonts/Univers-Oblique.otf');
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="225"
+   height="296"
+   viewBox="0 0 225 296.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="SMaRT-working.svg">
+  <defs
+     id="defs4">
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="167.57386"
+     inkscape:cy="148"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:window-width="1600"
+     inkscape:window-height="836"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:object-nodes="true"
+     inkscape:snap-midpoints="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="false"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Vector"
+     style="display:inline"
+     transform="translate(0,16)">
+    <text
+       sodipodi:linespacing="125%"
+       id="text4195"
+       y="239.60938"
+       x="112.13867"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'MV Boli';-inkscape-font-specification:'MV Boli';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Ultra-Bold';text-align:center;text-anchor:middle"
+         y="239.60938"
+         x="112.13867"
+         id="tspan4197"
+         sodipodi:role="line">SMaRT</tspan></text>
+    <g
+       transform="matrix(-0.38068844,0,0,0.38056548,247.49436,-74.109074)"
+       id="layer1">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 312.32408,254.29303 185.55359,330.25875 -206.2649,0.11485 -39.56378,70.71366 365.21799,0.057 -222.80241,-401.35067 -82.14049,0.20643 z"
+         style="fill:#e14c2d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.64044595px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         id="path3214" />
+      <path
+         inkscape:connector-curvature="0"
+         d="M 312.31392,254.26591 91.923882,655.37223 132.32998,728.10322 315.16759,396.77318 417.193,584.66155 l 80.8122,0 -185.69128,-330.39564 z"
+         style="fill:#ee9221;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.64044595px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         id="path4185" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 315.20979,396.83568 40.29125,74.21925 -103.62832,184.37916 365.41516,0.18957 -38.47047,74.49986 -446.47101,-2.04687 182.86339,-331.24097 z"
+         style="fill:#6bc9cf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.64044595px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         id="path5156" />
+    </g>
+  </g>
+</svg>

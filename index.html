@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Login Page | WSDoH</title>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>      <!-- Included with React-Bootstrap -->
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>   <!-- Included with React-Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+<!-- React.JS -->
+<!--
+<script src="js/react.min.js"></script>
+<script src="js/react-dom.min.js"></script>
+<script src="js/react-with-addons.min.js"></script>
+
+<script src="js/react-bootstrap.min.js"></script>
+-->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<link href="css/style.css" rel="stylesheet">
+<script src="js/Behaviour.js"></script>
+</head>
+
+<body>
+
+<!-- Show the navbar after login, maybe? -->
+<nav id="Login__Nav">
+  <div class="container-fliud">
+      <ul class="Login__Nav__List">
+        <!--<li class="active"><a href="#">Home</a></li>-->
+        <li><a class="glyphicon glyphicon-question-sign" href="#Help" data-toggle="tooltip" data-placement="bottom" title="Help"></a></li>
+        <li><a class="glyphicon glyphicon-list" href="#Tasks" data-toggle="tooltip" data-placement="bottom" title="Task List"></a></li>
+        <li><a class="glyphicon glyphicon-calendar" href="#Calendar" data-toggle="tooltip" data-placement="bottom" title="View Calendar"></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="img/jeff-copy.png" alt="Icon">
+            <!--<span class="caret"></span>-->
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li id="Logout"><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+
+<!-- Header -->
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <p class="text-center"><img id="header__logo" src="img/wsdhlg500.jpg" alt="Washington State Department of Health" /></p>
+    </div>
+  </div>
+</header>
+
+
+<div id="Login" class="container">
+  <!-- User picture here on valid email -->
+  <div id="Login__Profile" class="container-fluid text-center">
+    <img src="img/jeff-copy@3x.png" alt="Your Picture Here">
+    <h3>Jeffery Aramini</h3>
+    <h4>jeff_aramini@ihealthsolutions.net</h4>
+  </div>
+  
+  <!-- Login Form -->
+  <form class="form-signin">
+    <!-- Email items -->
+    <div id="Login__Email" class="Login__Textbox">
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input id="inputEmail" class="form-control" placeholder="EMAIL" type="email" required autofocus>
+      <span id="iconEmail" class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    </div>
+    <!-- Password items -->
+    <div id="Login__Password" class="Login__Textbox">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input id="inputPassword" class="form-control" placeholder="PASSWORD" type="password" required disabled>
+      <span id="iconPassword" class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+    </div>
+    
+    <div class="row">
+      <!-- "Remember Me" checkbox (deleted) -->
+      
+      <!-- Forgot Password Container -->
+      <div id="ForgotPW" class="col-xs-12">
+        <p id="ForgotPW__link"><a data-toggle="modal" data-target="#ForgotPW__modal">Forgot Your Password?</a></p>
+        <!-- Popup Container -->
+        <div id="ForgotPW__modal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Popup content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Forgot Your Password?</h3>
+              </div>
+              <div class="modal-body">
+                <p>Before asking an admin for password reset, please confirm that you cannot locate your password in any of these places:</p>
+                <ul>
+                  <li>The papers in your desk drawer</li>
+                  <li>The sticky notes on your desk and monitor</li>
+                  <li>The company-provided USB dongle</li>
+                  <li>The file "PASSWORDS.txt" on the root of your mobile device</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <button id="Login__Submit" class="btn btn-lg btn-primary btn-block disabled" type="submit" data-toggle="popover" data-trigger="manual" data-content="And here's some amazing content. It's very engaging. Right?">LOGIN</button>
+  </form>
+  
+</div>
+
+
+<section id="Apps">
+  <!-- Apps generated here via JS -->
+  <!-- <div class="App"></div> -->
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="text-center">&copy; Scientific Technologies Corporation 2016</p>
+  </div>
+</footer>
+
+</body>
+</html>
